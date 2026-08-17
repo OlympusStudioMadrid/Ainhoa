@@ -36,7 +36,7 @@ const CONFIG = {
   //    como "Cualquier persona con el enlace puede ver".
   // 4. Copia el ID del archivo zip desde su URL y pégalo abajo,
   //    o pega directamente la URL de descarga completa.
-  DOWNLOAD_ALL_URL: "REEMPLAZAR_URL_DEL_ZIP",
+  DOWNLOAD_ALL_URL: "https://drive.google.com/file/d/1eP17EXAYKKB118dyhG4cPc9yyXcdXj_O/view?usp=sharing",
 
   // --------------------------------------------------------
   // TEXTOS DE LA GALERÍA
