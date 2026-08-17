@@ -20,7 +20,7 @@ const CONFIG = {
   // ID de la carpeta de Google Drive donde están las fotos.
   // Se obtiene de la URL de la carpeta:
   // https://drive.google.com/drive/folders/ESTO_ES_EL_ID
-  GOOGLE_DRIVE_FOLDER_ID: "1nFEvjg03YQZEabua0HFlYC12xLGKup",
+  GOOGLE_DRIVE_FOLDER_ID: "1nFEvjg03YQZEabua0HFlYC12xLGKup_q",
 
   // --------------------------------------------------------
   // DESCARGA DE TODAS LAS FOTOS
