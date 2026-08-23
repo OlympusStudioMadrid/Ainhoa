@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Ainhoa · Galería del bautizo</title>
-  <meta name="description" content="Galería fotográfica del bautizo de Ainhoa — 9 de agosto de 2026.">
+  <title>Ainhoa · Recuerdos del bautizo</title>
+  <meta name="description" content="Recuerdos fotográficos del bautizo de Ainhoa — 9 de agosto de 2026.">
   <meta name="robots" content="noindex, nofollow">
 
   <!-- Vista previa al compartir el enlace -->
-  <meta property="og:title" content="Ainhoa · Galería del bautizo">
-  <meta property="og:description" content="Un día para recordar para siempre.">
+  <meta property="og:title" content="Ainhoa · Recuerdos del bautizo">
+  <meta property="og:description" content="Un día vivido con mucho amor, guardado para siempre.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/icons/og-preview.jpg">
 
@@ -18,13 +18,51 @@
 <body>
 
   <!-- ============================================================
-       HERO
+       HERO — con motivos decorativos de línea (iglesia, paloma, ramas)
+       Todos son puramente decorativos (aria-hidden) y en trazo fino,
+       para no competir nunca con las fotografías.
        ============================================================ -->
   <header class="hero">
+
+    <!-- Rama floral, esquina superior izquierda -->
+    <svg class="line-art line-art--sprig-tl" data-depth="0.6" viewBox="0 0 140 140" aria-hidden="true">
+      <path d="M15 125 C 25 95, 20 60, 45 20" />
+      <ellipse cx="34" cy="55" rx="12" ry="6" transform="rotate(-35 34 55)" />
+      <ellipse cx="26" cy="80" rx="11" ry="5.5" transform="rotate(-55 26 80)" />
+      <ellipse cx="40" cy="100" rx="10" ry="5" transform="rotate(-25 40 100)" />
+      <circle cx="46" cy="18" r="3.5" />
+    </svg>
+
+    <!-- Paloma en vuelo, esquina superior derecha -->
+    <svg class="line-art line-art--dove" data-depth="1" viewBox="0 0 160 110" aria-hidden="true">
+      <path d="M15 70 C 40 40, 55 75, 78 50 C 95 32, 118 55, 145 30" />
+      <path d="M78 50 C 82 40, 92 36, 100 40" />
+      <circle cx="82" cy="47" r="3" />
+      <path d="M118 25 C 124 20, 132 20, 136 24" />
+    </svg>
+
+    <!-- Iglesia minimalista, asomando tras la tarjeta -->
+    <svg class="line-art line-art--church" data-depth="0.4" viewBox="0 0 120 120" aria-hidden="true">
+      <path d="M25 108 V58 L60 26 L95 58 V108" />
+      <path d="M50 108 V80 H70 V108" />
+      <circle cx="60" cy="66" r="5.5" />
+      <path d="M60 26 V6" />
+      <path d="M51 12 H69" />
+    </svg>
+
+    <!-- Rama floral, esquina inferior derecha (espejo de la primera) -->
+    <svg class="line-art line-art--sprig-br" data-depth="0.7" viewBox="0 0 140 140" aria-hidden="true">
+      <path d="M125 15 C 115 45, 120 80, 95 120" />
+      <ellipse cx="106" cy="85" rx="12" ry="6" transform="rotate(35 106 85)" />
+      <ellipse cx="114" cy="60" rx="11" ry="5.5" transform="rotate(55 114 60)" />
+      <ellipse cx="100" cy="40" rx="10" ry="5" transform="rotate(25 100 40)" />
+      <circle cx="94" cy="122" r="3.5" />
+    </svg>
+
     <div class="hero__card" data-reveal>
-      <p class="hero__eyebrow">Te invitamos con mucho amor al bautizo de</p>
+      <p class="hero__eyebrow" data-gallery-eyebrow>Los recuerdos del bautizo de</p>
       <h1 class="hero__name" data-gallery-title>Ainhoa</h1>
-      <p class="hero__tagline" data-gallery-subtitle>Un día para recordar para siempre</p>
+      <p class="hero__tagline" data-gallery-subtitle>Un día vivido con mucho amor, guardado para siempre</p>
 
       <div class="hero__divider" aria-hidden="true">♥</div>
 
@@ -34,22 +72,9 @@
         <li><strong>Lugar</strong><span data-gallery-place>Iglesia San Jaime Apóstol, Villaverde</span></li>
       </ul>
 
-      <p class="hero__scroll-hint">Desliza para ver los recuerdos ↓</p>
+      <p class="hero__scroll-hint" data-gallery-scroll-hint>Desliza para revivir el día ↓</p>
     </div>
   </header>
-
-  <!-- ============================================================
-       BOTÓN DESCARGAR TODAS
-       ============================================================ -->
-  <div class="action-bar">
-    <a id="download-all-btn" class="btn-download" href="#" download hidden
-       aria-label="Descargar todas las fotografías en un archivo ZIP">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-        <path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-      Descargar todas las fotografías
-    </a>
-  </div>
 
   <!-- ============================================================
        ESTADOS: cargando / error
@@ -75,8 +100,21 @@
 
   <footer class="site-footer">
     <p><strong>Ainhoa</strong></p>
-    <p>Gracias por compartir y celebrar con nosotros este día tan especial.</p>
+    <p data-gallery-footer>Gracias por revivir con nosotros este día tan especial.</p>
   </footer>
+
+  <!-- ============================================================
+       BOTÓN FLOTANTE — descargar todas las fotos
+       Fijo en pantalla, aparece con una animación suave cuando la
+       galería está lista y flota levemente para dar vida a la página.
+       ============================================================ -->
+  <a id="download-all-btn" class="btn-download" href="#" download
+     aria-label="Descargar todas las fotografías en un archivo ZIP">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span class="btn-download__text">Descargar todas</span>
+  </a>
 
   <!-- ============================================================
        MODAL / VISUALIZADOR
@@ -89,6 +127,11 @@
 
       <img id="photo-modal-img" class="modal__img" src="" alt="">
       <span id="photo-modal-counter" class="modal__counter" aria-hidden="true"></span>
+
+      <a id="photo-modal-download" class="modal__btn modal__download" href="#" download
+         aria-label="Descargar esta fotografía en máxima calidad">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
 
       <button id="photo-modal-next" class="modal__btn modal__next" type="button" aria-label="Fotografía siguiente">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 18l6-6-6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>

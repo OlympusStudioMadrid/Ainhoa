@@ -1,0 +1,65 @@
+// ============================================================
+// CONFIGURACIÓN DEL PROYECTO — "El bautizo de Ainhoa"
+// ============================================================
+// Este es el ÚNICO archivo que necesitas editar para poner en
+// marcha la galería. Todos los campos que debes rellenar están
+// marcados con "REEMPLAZAR" o "PEGAR_AQUI".
+//
+// Instrucciones detalladas de cómo obtener cada valor en README.md
+// ============================================================
+
+const CONFIG = {
+
+  // --------------------------------------------------------
+  // GOOGLE DRIVE
+  // --------------------------------------------------------
+  // API key de Google Cloud, restringida a "Google Drive API"
+  // y al dominio de GitHub Pages (ver README, sección 3-4).
+  GOOGLE_API_KEY: "PEGAR_AQUI_API_KEY",
+
+  // ID de la carpeta de Google Drive donde están las fotos.
+  // Se obtiene de la URL de la carpeta:
+  // https://drive.google.com/drive/folders/ESTO_ES_EL_ID
+  GOOGLE_DRIVE_FOLDER_ID: "PEGAR_AQUI_FOLDER_ID",
+
+  // --------------------------------------------------------
+  // DESCARGA DE TODAS LAS FOTOS
+  // --------------------------------------------------------
+  // Enlace de descarga directa de un ZIP con todas las fotos.
+  // NO se genera en el navegador (ver README, sección 13 y
+  // js/gallery.js para la explicación técnica de por qué).
+  //
+  // Cómo crearlo:
+  // 1. Entra en la carpeta de Drive, selecciona todo (Ctrl/Cmd+A).
+  // 2. Clic derecho → "Descargar". Drive comprime todo en un .zip.
+  // 3. Sube ese .zip a Drive (a la carpeta, o a otra) y compártelo
+  //    como "Cualquier persona con el enlace puede ver".
+  // 4. Copia el ID del archivo zip desde su URL y pégalo abajo,
+  //    o pega directamente la URL de descarga completa.
+  DOWNLOAD_ALL_URL: "REEMPLAZAR_URL_DEL_ZIP",
+
+  // --------------------------------------------------------
+  // TEXTOS DE LA GALERÍA
+  // --------------------------------------------------------
+  // Todo el texto visible de la web vive aquí. El bautizo ya
+  // se celebró, así que los textos hablan de "recuerdos", no
+  // de una invitación a un evento futuro.
+  GALLERY_EYEBROW: "Los recuerdos del bautizo de",
+  GALLERY_TITLE: "Ainhoa",
+  GALLERY_SUBTITLE: "Un día vivido con mucho amor, guardado para siempre",
+  GALLERY_DATE: "9 de agosto de 2026",
+  GALLERY_TIME: "12:30 pm",
+  GALLERY_PLACE: "Iglesia San Jaime Apóstol, Villaverde",
+  GALLERY_SCROLL_HINT: "Desliza para revivir el día ↓",
+  GALLERY_FOOTER_TEXT: "Gracias por revivir con nosotros este día tan especial.",
+
+  // --------------------------------------------------------
+  // AJUSTES INTERNOS (normalmente no hace falta tocarlos)
+  // --------------------------------------------------------
+  // Tamaño de las miniaturas en la galería (px, lado mayor)
+  THUMBNAIL_SIZE: 640,
+  // Tamaño de la imagen ampliada en el visualizador (px, lado mayor)
+  FULLSIZE_IMAGE_SIZE: 1800,
+  // Cuántas imágenes precargar alrededor de la actual en el modal
+  PRELOAD_NEIGHBORS: 1,
+};

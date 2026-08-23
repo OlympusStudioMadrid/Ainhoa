@@ -113,9 +113,14 @@ GOOGLE_API_KEY: "PEGAR_AQUI_API_KEY",
 GOOGLE_DRIVE_FOLDER_ID: "PEGAR_AQUI_FOLDER_ID",
 ```
 
-por tus valores reales. Ese mismo archivo también tiene los textos del
-título, subtítulo, fecha, hora y lugar — ya están rellenos con los datos
-de la invitación, pero puedes ajustarlos si algo cambia.
+por tus valores reales. Ese mismo archivo también tiene **todos los
+textos** que se ven en la página (frase de encabezado, título,
+subtítulo, fecha, hora, lugar, texto del scroll y del pie de página) —
+ya están rellenos con los datos de la invitación en modo "recuerdo"
+(el bautizo ya se celebró), pero puedes ajustarlos si algo cambia.
+`js/config.js` es el único archivo que necesitas tocar para cualquier
+cambio de contenido; el resto de archivos son solo estructura y
+diseño.
 
 ## 8. Probar la web en tu ordenador
 
