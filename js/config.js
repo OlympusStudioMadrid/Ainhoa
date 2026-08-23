@@ -15,7 +15,7 @@ const CONFIG = {
   // --------------------------------------------------------
   // API key de Google Cloud, restringida a "Google Drive API"
   // y al dominio de GitHub Pages (ver README, sección 3-4).
-  GOOGLE_API_KEY: "IzaSyBTTJBQHTLQuEJMJKl4WH2Z9HX-aKYuU_8",
+  GOOGLE_API_KEY: "AIzaSyBTTJBQHTLQuEJMJKl4WH2Z9HX-aKYuU_8",
 
   // ID de la carpeta de Google Drive donde están las fotos.
   // Se obtiene de la URL de la carpeta:
