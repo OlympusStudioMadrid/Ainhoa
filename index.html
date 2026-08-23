@@ -24,40 +24,10 @@
        ============================================================ -->
   <header class="hero">
 
-    <!-- Rama floral, esquina superior izquierda -->
-    <svg class="line-art line-art--sprig-tl" data-depth="0.6" viewBox="0 0 140 140" aria-hidden="true">
-      <path d="M15 125 C 25 95, 20 60, 45 20" />
-      <ellipse cx="34" cy="55" rx="12" ry="6" transform="rotate(-35 34 55)" />
-      <ellipse cx="26" cy="80" rx="11" ry="5.5" transform="rotate(-55 26 80)" />
-      <ellipse cx="40" cy="100" rx="10" ry="5" transform="rotate(-25 40 100)" />
-      <circle cx="46" cy="18" r="3.5" />
-    </svg>
-
-    <!-- Paloma en vuelo, esquina superior derecha -->
-    <svg class="line-art line-art--dove" data-depth="1" viewBox="0 0 160 110" aria-hidden="true">
-      <path d="M15 70 C 40 40, 55 75, 78 50 C 95 32, 118 55, 145 30" />
-      <path d="M78 50 C 82 40, 92 36, 100 40" />
-      <circle cx="82" cy="47" r="3" />
-      <path d="M118 25 C 124 20, 132 20, 136 24" />
-    </svg>
-
-    <!-- Iglesia minimalista, asomando tras la tarjeta -->
-    <svg class="line-art line-art--church" data-depth="0.4" viewBox="0 0 120 120" aria-hidden="true">
-      <path d="M25 108 V58 L60 26 L95 58 V108" />
-      <path d="M50 108 V80 H70 V108" />
-      <circle cx="60" cy="66" r="5.5" />
-      <path d="M60 26 V6" />
-      <path d="M51 12 H69" />
-    </svg>
-
-    <!-- Rama floral, esquina inferior derecha (espejo de la primera) -->
-    <svg class="line-art line-art--sprig-br" data-depth="0.7" viewBox="0 0 140 140" aria-hidden="true">
-      <path d="M125 15 C 115 45, 120 80, 95 120" />
-      <ellipse cx="106" cy="85" rx="12" ry="6" transform="rotate(35 106 85)" />
-      <ellipse cx="114" cy="60" rx="11" ry="5.5" transform="rotate(55 114 60)" />
-      <ellipse cx="100" cy="40" rx="10" ry="5" transform="rotate(25 100 40)" />
-      <circle cx="94" cy="122" r="3.5" />
-    </svg>
+    <!-- Ilustración de referencia (iglesia y paloma), recortada en
+         dos esquinas con los bordes internos difuminados -->
+    <img class="hero__corner-art hero__corner-art--church" src="assets/icons/hero-church.png" alt="" aria-hidden="true">
+    <img class="hero__corner-art hero__corner-art--dove" src="assets/icons/hero-dove.png" alt="" aria-hidden="true">
 
     <div class="hero__card" data-reveal>
       <p class="hero__eyebrow" data-gallery-eyebrow>Los recuerdos del bautizo de</p>
@@ -75,6 +45,47 @@
       <p class="hero__scroll-hint" data-gallery-scroll-hint>Desliza para revivir el día ↓</p>
     </div>
   </header>
+
+  <!-- ============================================================
+       CARRUSEL DE VISTA PREVIA — muestra unas pocas fotos al azar
+       en formato pequeño, solo decorativo (no se amplían al tocar).
+       La galería completa con el visualizador sigue más abajo, sin
+       cambios.
+       ============================================================ -->
+  <section id="preview-carousel" class="preview-carousel" hidden aria-label="Vista previa de fotografías">
+    <p class="preview-carousel__title">Un día inolvidable</p>
+
+    <div class="preview-carousel__row">
+      <button id="carousel-prev" class="carousel-nav carousel-nav--prev" type="button" aria-label="Ver fotos anteriores">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 18l-6-6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+
+      <div id="preview-carousel-track" class="preview-carousel__track"></div>
+
+      <button id="carousel-next" class="carousel-nav carousel-nav--next" type="button" aria-label="Ver más fotos">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 18l6-6-6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+
+    <ul class="feature-strip">
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 15l-5-5-4 4-3-3-6 6"/></svg>
+        <span>Explora cada momento especial</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 20s-7-4.35-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 5c-2.5 4.65-9.5 9-9.5 9Z"/></svg>
+        <span>Guarda tus recuerdos favoritos</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3Z"/><path d="M19 15l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7.7-2Z"/></svg>
+        <span>Revive emociones únicas</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></svg>
+        <span>Comparte con quienes más quieras</span>
+      </li>
+    </ul>
+  </section>
 
   <!-- ============================================================
        ESTADOS: cargando / error
@@ -152,6 +163,7 @@
   <script src="js/animations.js"></script>
   <script src="js/gallery.js"></script>
   <script src="js/modal.js"></script>
+  <script src="js/carousel.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
