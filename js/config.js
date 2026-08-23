@@ -15,12 +15,12 @@ const CONFIG = {
   // --------------------------------------------------------
   // API key de Google Cloud, restringida a "Google Drive API"
   // y al dominio de GitHub Pages (ver README, sección 3-4).
-  GOOGLE_API_KEY: "PEGAR_AQUI_API_KEY",
+  GOOGLE_API_KEY: "AIzaSyBTTJBQHTLQuEJMJKl4WH2Z9HX-aKYuU_8",
 
   // ID de la carpeta de Google Drive donde están las fotos.
   // Se obtiene de la URL de la carpeta:
   // https://drive.google.com/drive/folders/ESTO_ES_EL_ID
-  GOOGLE_DRIVE_FOLDER_ID: "PEGAR_AQUI_FOLDER_ID",
+  GOOGLE_DRIVE_FOLDER_ID: "1nFEvjg03YQZEabua0HFlYC12xLGKup_q",
 
   // --------------------------------------------------------
   // DESCARGA DE TODAS LAS FOTOS
@@ -36,7 +36,7 @@ const CONFIG = {
   //    como "Cualquier persona con el enlace puede ver".
   // 4. Copia el ID del archivo zip desde su URL y pégalo abajo,
   //    o pega directamente la URL de descarga completa.
-  DOWNLOAD_ALL_URL: "REEMPLAZAR_URL_DEL_ZIP",
+  DOWNLOAD_ALL_URL: "https://drive.google.com/file/d/1IUO0o9LsmDJjyjTd7h6jayVha8a7T1Mz/view?usp=sharing",
 
   // --------------------------------------------------------
   // TEXTOS DE LA GALERÍA
